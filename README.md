@@ -1,4 +1,4 @@
-# Security Impact Report (SIR) — ChatGPT Edition
+# Open Security Assessment Report (OSAR) Toolkit to create a Security Impact Report (SIR) — ChatGPT Edition
 
 An open-source, organization-agnostic toolkit for producing decision-grade **security and impact reports** on technology assets — applications, vendor SaaS, infrastructure changes, source-code releases — deployed as an **OpenAI ChatGPT Custom GPT** suitable for consumer Plus, Team, and Enterprise tiers.
 
@@ -100,7 +100,7 @@ See `ChatGPT_Data_Handling_Notes.md` for the full tier-by-tier breakdown.
 
 ## Origin and design philosophy
 
-This toolkit was extracted from a working public-sector CISO program and generalized for the open-source community. The hub-and-spoke structure is deliberate: it lets you adopt the modules you need, swap in your own, and keep the orchestrator stable across reports. The ChatGPT Edition is a tailored fork of the model-agnostic baseline — every change here is in service of the Custom GPT deployment surface.
+This toolkit was extracted from a need by a public-sector CISO to enhance a goverance program and generalized for the open-source community. The hub-and-spoke structure is deliberate: it lets you adopt the modules you need, swap in your own, and keep the orchestrator stable across reports. The ChatGPT Edition is a tailored fork of the model-agnostic baseline — every change here is in service of the Custom GPT deployment surface.
 
 ## Contributing
 
