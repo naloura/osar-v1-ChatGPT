@@ -1,0 +1,101 @@
+# =============================================================================
+# Security Impact Report (SIR) — Configuration Template
+# =============================================================================
+# Copy this file to `config.yaml` and fill in your organization's values, then
+# run `./configure.sh` to produce a configured working copy of the source files.
+#
+# DO NOT commit `config.yaml` to source control — it's already in .gitignore.
+# This file (`config.example.yaml`) IS committed; treat it as documentation.
+# =============================================================================
+
+# ----------------------------------------------------------------------------
+# Organization identity — appears on the cover page and in every header/footer
+# ----------------------------------------------------------------------------
+ORGANIZATION:        "Acme Department of Information Technology"
+ORG_SHORT:           "Acme DoIT"
+DIVISION:            "Cyber Security Division"
+JURISDICTION:        "State of Acme"            # used in legal/regulatory framing
+
+# ----------------------------------------------------------------------------
+# Maintainer / contact metadata
+# ----------------------------------------------------------------------------
+MAINTAINER_NAME:     "Jane Doe"
+MAINTAINER_TITLE:    "CISO"
+MAINTAINER_EMAIL:    "ciso@acme.example.gov"
+IR_CONTACT_EMAIL:    "incident-response@acme.example.gov"
+
+# ----------------------------------------------------------------------------
+# Internal policy & standard library
+# Each {POLICY_REF:<topic>} or {STANDARD_REF:<topic>} token below maps to your
+# organization's existing policy/standard numbering. Use whatever naming
+# convention you already have ("POL-2024-014", "ISO-A.5.1", "10-12", etc.).
+# ----------------------------------------------------------------------------
+POLICY_REF:
+  acceptable_use:              "POL-AUP-001"          # Acceptable Use Policy
+  asset_mgmt:                  "POL-ASSET-001"
+  identification_authentication: "POL-IA-001"
+  access_control:              "POL-AC-001"
+  authentication:              "POL-AUTH-001"
+  audit_accountability:        "POL-AU-001"
+  contingency:                 "POL-CP-001"
+  incident_response:           "POL-IR-001"
+  vendor_security:             "POL-VENDOR-001"
+  remote_access:               "POL-REMOTE-001"
+  risk_assessment:             "POL-RA-001"
+  awareness_training:          "POL-AT-001"
+  configuration_mgmt:          "POL-CM-001"
+  data_governance:             "POL-DATA-001"
+  operations:                  "POL-OPS-001"
+  program_management:          "POL-PM-001"
+  topic:                       "POL-XX-XXX"           # generic fallback
+
+STANDARD_REF:
+  data_encryption:             "STD-CRYPTO-001"
+  vulnerability_mgmt:          "STD-VULN-001"
+  access_provisioning:         "STD-IAM-001"
+  security_operations:         "STD-SOC-001"
+  operations:                  "STD-OPS-001"
+
+# ----------------------------------------------------------------------------
+# Vendor security exhibit / addendum used in procurement
+# (the document that defines vendor security obligations under your contracts)
+# ----------------------------------------------------------------------------
+VENDOR_SECURITY_ADDENDUM:    "Vendor Security Exhibit (VSE-2024)"
+
+# ----------------------------------------------------------------------------
+# Vendor stack — fill in the products YOUR organization uses
+# These appear in the Infrastructure Impact and NIST Controls modules as
+# illustrative defaults. They are NOT requirements — the toolkit works against
+# any equivalent stack.
+# ----------------------------------------------------------------------------
+IDP:                 "Microsoft Entra ID"     # Identity provider
+MDM:                 "Microsoft Intune"       # Mobile device management
+EDR:                 "CrowdStrike Falcon"     # Endpoint detection & response
+VULN_SCANNER:        "Qualys VMDR"            # Vulnerability scanner
+SIEM:                "IBM QRadar"             # SIEM
+TENANCY:             "Microsoft 365 GCC"      # Cloud tenancy
+HOSTING_ENV:         "Microsoft Azure (Gov)"  # Hosting environment
+COMPLIANCE_PLATFORM: "Microsoft Purview"      # DLP / compliance platform
+ENTERPRISE_COLLAB:   "SharePoint Online"      # Collaboration platform
+
+# ----------------------------------------------------------------------------
+# Applicable jurisdictional law — citations in the Instructions and WCAG module
+# Replace these with the statutes that apply to your jurisdiction.
+# ----------------------------------------------------------------------------
+STATE_PRIVACY_LAW:           "[Your state's data-breach notification law, e.g., 'Cal. Civ. Code § 1798.82']"
+STATE_PRIVACY_LAW_BILL:      "[Your applicable bill or session law reference]"
+STATE_PUBLIC_RECORDS_LAW:    "[Your state's public-records law]"
+STATE_ACCESSIBILITY_LAW:     "[Your state's web-accessibility statute, e.g., 'Cal. Gov't Code § 7405']"
+STATE_LAW:                   "[Generic citation prefix for state statutes]"
+
+# ----------------------------------------------------------------------------
+# Brand palette — used in cover-page styling
+# ----------------------------------------------------------------------------
+COLOR_PRIMARY:       "#1E3A5F"     # Deep neutral blue (placeholder)
+COLOR_ACCENT:        "#C0A060"     # Warm gold (placeholder)
+
+# ----------------------------------------------------------------------------
+# Logo
+# ----------------------------------------------------------------------------
+# Path to your base64-encoded PNG logo (relative to repo root)
+LOGO_FILE:           "assets/Cover_Logo_Base64.txt"
